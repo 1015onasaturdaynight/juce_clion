@@ -12,6 +12,10 @@ add_executable(juce_clion main.cpp)
 
 target_sources(juce_clion PUBLIC main.cpp)
 
-target_compile_definitions(juce_clion PRIVATE JUCE_STANDALONE_APPLICATION=1)
+# JUCE_USE_CURL is set here to prevent the juce_core package
+# used in the sample program from requiring libcurl
+target_compile_definitions(juce_clion PRIVATE
+        JUCE_STANDALONE_APPLICATION=1
+        JUCE_USE_CURL=0)
 
 target_link_libraries(juce_clion PRIVATE juce::juce_core)
