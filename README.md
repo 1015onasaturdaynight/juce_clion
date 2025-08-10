@@ -5,8 +5,8 @@ A simple CLion/CMake project using JUCE on RHEL8.
 For Linux dependency details, see: [JUCE Dependencies on Linux](https://github.com/juce-framework/JUCE/blob/master/docs/Linux%20Dependencies.md)
 
 Prerequisites:
-1. CMake 3.22
-2. gcc 13.2.1
+1. CMake >= 3.22
+2. gcc >= 13.2.1
 3. CLion
 
 Once cloned, in CLion:

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(juce_clion VERSION 0.0.2)
+project(juce_clion VERSION 0.0.3)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -14,7 +14,7 @@ include(FetchContent)
 fetchcontent_declare(
   juce
   GIT_REPOSITORY https://github.com/juce-framework/JUCE.git
-  GIT_TAG        7.0.12
+  GIT_TAG        8.0.8
   GIT_SHALLOW    TRUE
 )
 
@@ -43,3 +43,5 @@ target_link_libraries(${target_name} PRIVATE
   juce::juce_recommended_warning_flags
   juce::juce_core
 )
+
+install(TARGETS ${target_name} RUNTIME DESTINATION bin)

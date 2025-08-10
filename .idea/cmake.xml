@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeSharedSettings">
     <configurations>
-      <configuration PROFILE_NAME="Release" ENABLED="true" GENERATION_DIR="../bld_release" CONFIG_NAME="Release" BUILD_OPTIONS="-- -j4" />
-      <configuration PROFILE_NAME="Debug" ENABLED="true" GENERATION_DIR="../bld_debug" CONFIG_NAME="Debug" BUILD_OPTIONS="-- -j4" />
+      <configuration PROFILE_NAME="Release" ENABLED="true" GENERATION_DIR="../bld_release" CONFIG_NAME="Release" TOOLCHAIN_NAME="gcc13.2.1_cmake3.30.0" GENERATION_OPTIONS="-DCMAKE_INSTALL_PREFIX=../run ../src" BUILD_OPTIONS="-- -j4" NO_GENERATOR="true" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" GENERATION_DIR="../bld_debug" CONFIG_NAME="Debug" TOOLCHAIN_NAME="gcc13.2.1_cmake3.30.0" GENERATION_OPTIONS="-DCMAKE_INSTALL_PREFIX=../run ../src" BUILD_OPTIONS="-- -j4" NO_GENERATOR="true" />
     </configurations>
   </component>
 </project>
